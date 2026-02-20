@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - ZANKLAN Darius</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #e6e6e6;
+        }
+
+        .cv-container {
+            width: 900px;
+            margin: 30px auto;
+            display: flex;
+            background: white;
+        }
+
+        /* ===== COLONNE GAUCHE ===== */
+        .sidebar {
+            width: 30%;
+            background: #2f3e46;
+            color: white;
+            padding: 25px;
+        }
+
+        .photo {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .photo img {
+            width: 140px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .sidebar h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .sidebar p,
+        .sidebar li {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        /* ===== COLONNE DROITE ===== */
+        .content {
+            width: 70%;
+            padding: 35px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        header h2 {
+            font-size: 16px;
+            color: gray;
+            margin-bottom: 25px;
+        }
+
+        .content h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .block {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 12px;
+        }
+
+        .block span {
+            min-width: 110px;
+            font-weight: bold;
+            color: #555;
+            font-size: 13px;
+        }
+
+        .block p {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skills li {
+            background: #2f3e46;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 3px;
+            font-size: 13px;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="cv-container">
+
+    <!-- COLONNE GAUCHE -->
+    <aside class="sidebar">
+
+        <div class="photo">
+            <!-- TU CHANGES JUSTE LE SRC -->
+            <img src="fich.png.PNG" alt="Photo de profil">
+        </div>
+
+        <h3>PROFIL</h3>
+        <p>
+            Étudiant sérieux et motivé, passionné par le numérique,
+            la création et l’apprentissage continu.
+        </p>
+
+        <h3>CONTACT</h3>
+        <ul>
+            <li>📞 +229 01 92 69 80 87</li>
+            <li>📧 johaneszanklannn@gmail.com</li>
+            <li>📍 Bénin</li>
+        </ul>
+
+        <h3>INTÉRÊTS</h3>
+        <ul>
+            <li>Programmation</li>
+            <li>Design</li>
+            <li>Sport</li>
+            <li>Lecture</li>
+        </ul>
+
+    </aside>
+
+    <!-- COLONNE DROITE -->
+    <main class="content">
+
+        <header>
+            <h1>ZANKLAN Darius</h1>
+            <h2>Étudiant / Développeur / entrepreneur</h2>
+        </header>
+
+        <h3>FORMATION</h3>
+        <div class="block">
+            <span>2023 - Présent</span>
+            <p>
+                <strong>Université PIGIER Benin</strong><br>
+                Intelligence Artificielle et Objets Connectés
+            </p>
+        </div>
+
+        <h3>EXPÉRIENCE</h3>
+        <div class="block">
+            <span>2024</span>
+            <p>
+                <strong>Projet personnel</strong><br>
+                Réalisation de projets en HTML & CSS
+            </p>
+        </div>
+
+        <h3>COMPÉTENCES</h3>
+        <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Word</li>
+            <li>Excel</li>
+        </ul>
+
+    </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Page4</title>
+
+<style>
+/* STYLE GLOBAL */
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:#f7efe6;
+    color:#3b2416;
+    padding:25px;
+    line-height:1.6;
+}
+
+/* TITRES */
+h2{
+    margin-top:30px;
+    color:#5a3418;
+    border-bottom:2px solid #c9a27e;
+    padding-bottom:5px;
+}
+
+/* LISTES GÉNÉRALES */
+ul, ol, dl{
+    margin-bottom:20px;
+}
+
+/* LISTES AVEC / SANS RETRAIT */
+.retrait{
+    padding-left:40px;
+}
+
+.pas_de_retrait{
+    padding-left:0;
+}
+
+/* PUCE NON ORDONNÉE */
+.cercle{
+    list-style-type:circle;
+}
+
+.carre{
+    list-style-type:square;
+}
+
+.rien{
+    list-style-type:none;
+    padding-left:0;
+}
+
+/* LISTES ORDONNÉES */
+.commence_a_zero{
+    list-style-type:decimal-leading-zero;
+}
+
+.lettres_minuscules{
+    list-style-type:lower-alpha;
+}
+
+.chiffres_romains{
+    list-style-type:upper-roman;
+}
+
+.lettres_grecques{
+    list-style-type:lower-greek;
+}
+
+/* DÉFINITION */
+dt{
+    font-weight:bold;
+    margin-top:10px;
+}
+
+dd{
+    margin-left:20px;
+    font-style:italic;
+}
+</style>
+</head>
+
+<body>
+
+<ul>
+    <li>Fraises</li>
+    <li>Framboises</li>
+    <li>Cerises</li>
+</ul>
+
+<ol>
+    <li>Je me lève</li>
+    <li>Je mange et je bois</li>
+    <li>Je retourne me coucher</li>
+</ol>
+
+<dl>
+    <dt>Chat</dt>
+    <dd>Animal à 4 pattes qui fait "Miaou !"</dd>
+
+    <dt>Chien</dt>
+    <dd>Animal à 4 pattes qui fait "Ouaf Ouaf !"</dd>
+
+    <dt>Prof de maths</dt>
+    <dd>Personne qui enseigne des choses que personne ne comprend</dd>
+</dl>
+
+<p>Voici une liste avec retrait (par défaut) :</p>
+<ul class="retrait">
+    <li>La vie est belle</li>
+    <li>Vis chaque jour comme si c'était le dernier</li>
+    <li>Rêve grand, travaille dur, réussir</li>
+</ul>
+
+<p>Voici une liste sans retrait :</p>
+<ul class="pas_de_retrait">
+    <li>La vie est un voyage, pas une destination</li>
+    <li>Vivez l'instant</li>
+    <li>Vous pouvez voir<br>que le texte n'est pas décalé sur la droite</li>
+</ul>
+
+<h2>Quelques listes non ordonnées</h2>
+
+<p>Liste à puce non ordonnée sans modification (<em>disc</em>) :</p>
+<ul>
+    <li>Vie</li>
+    <li>Liberté</li>
+    <li>Bonheur</li>
+</ul>
+
+<p>Avec <em>circle</em> :</p>
+<ul class="cercle">
+    <li>Manger</li>
+    <li>Lire</li>
+    <li>Dormir</li>
+</ul>
+
+<p>Avec <em>square</em> :</p>
+<ul class="carre">
+    <li>Boire</li>
+    <li>Se coucher</li>
+    <li>Acheter</li>
+</ul>
+
+<p>Avec <em>none</em> (sans puces) :</p>
+<ul class="rien">
+    <li>Couleur</li>
+    <li>Ranger</li>
+    <li>Choisir</li>
+</ul>
+
+<h2>Quelques listes ordonnées</h2>
+
+<p>Liste ordonnée sans modification (<em>decimal</em>) :</p>
+<ol>
+    <li>Un</li>
+    <li>Deux</li>
+    <li>Trois</li>
+    <li>Quatre</li>
+</ol>
+
+<p>Avec <em>decimal-leading-zero</em> :</p>
+<ol class="commence_a_zero">
+    <li>Fort</li>
+    <li>Faible</li>
+    <li>Capable</li>
+    <li>Sage</li>
+</ol>
+
+<p>Avec <em>lower-alpha</em> :</p>
+<ol class="lettres_minuscules">
+    <li>Un</li>
+    <li>Deux</li>
+    <li>Trois</li>
+    <li>Quatre</li>
+</ol>
+
+<p>Avec <em>upper-roman</em> :</p>
+<ol class="chiffres_romains">
+    <li>Un</li>
+    <li>Deux</li>
+    <li>Trois</li>
+    <li>Quatre</li>
+</ol>
+
+<p>Avec <em>lower-greek</em> :</p>
+<ol class="lettres_grecques">
+    <li>Un</li>
+    <li>Deux</li>
+    <li>Trois</li>
+    <li>Quatre</li>
+</ol>
+
+</body>
+</html>

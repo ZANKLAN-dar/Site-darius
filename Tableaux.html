@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TABLEAUX</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #f7efe7, #f3e2d3);
+            padding: 40px;
+            color: #3a2415;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+            color: #5a2d0c;
+            letter-spacing: 1px;
+        }
+
+        /* STYLE GENERAL DES TABLEAUX */
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: 25px auto;
+            background: linear-gradient(145deg, #fff6ec, #ecd6c0);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 
+                8px 8px 16px rgba(0, 0, 0, 0.25),
+               -8px -8px 16px rgba(255, 255, 255, 0.6);
+            transition: transform 0.3s ease;
+        }
+
+        table:hover {
+            transform: translateY(-5px);
+        }
+
+        th {
+            background: linear-gradient(145deg, #8b4513, #a0522d);
+            color: #fff;
+            padding: 12px;
+            font-size: 17px;
+            text-transform: uppercase;
+        }
+
+        td {
+            border: 1px solid #8b4513;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #fffaf5;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f3e1cf;
+        }
+
+        tr:hover td {
+            background-color: #e8cbb1;
+            transition: 0.3s;
+        }
+
+        /* Texte vertical */
+        .vertical-text {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            font-weight: bold;
+            background-color: #d8b59a;
+        }
+
+        /* Texte oblique */
+        .oblique-montant {
+            display: inline-block;
+            transform: rotate(-30deg);
+            font-weight: bold;
+        }
+
+        .oblique-descendant {
+            display: inline-block;
+            transform: rotate(30deg);
+            font-weight: bold;
+        }
+
+        /* Ligne total */
+        .total {
+            font-weight: bold;
+            background: linear-gradient(145deg, #c49a6c, #b0895a);
+            color: #f5aa54;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ===== TABLEAU PIGIER ===== -->
+<h2>Tableau Pigier</h2>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Pigier</th>
+            <th colspan="2">Spécialité</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="3" class="vertical-text">Marché</td>
+            <td>RGL</td>
+            <td colspan="2">RMS</td>
+        </tr>
+        <tr>
+            <td rowspan="2"><span class="oblique-montant">IAOC</span></td>
+            <td rowspan="2"><span class="oblique-descendant">DAS</span></td>
+            <td>CIB</td>
+        </tr>
+        <tr>
+            <td>GTL</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- ===== TABLEAU 1 ===== -->
+<h2>Tableau 1</h2>
+<table>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>F</td>
+        <td>E</td>
+        <td>D</td>
+    </tr>
+</table>
+
+<!-- ===== TABLEAU 2 ===== -->
+<h2>Tableau 2</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Désignation</th>
+            <th>Quantité</th>
+            <th>Prix</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>PC 1</td>
+            <td>20</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>PC 2</td>
+            <td>10</td>
+            <td>30</td>
+        </tr>
+        <tr class="total">
+            <td>Total</td>
+            <td>30</td>
+            <td>70</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
